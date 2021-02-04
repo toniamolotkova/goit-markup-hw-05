@@ -89,6 +89,7 @@ img {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
 }
 
 .modal {
@@ -111,14 +112,25 @@ img {
 }
 
 .btnclose {
-  display: block;
-  margin: 8px 8px 0 auto;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 30px;
   height: 30px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
 
   background-color: transparent;
+
+  cursor: pointer;
+}
+
+.icon-close {
+  fill: #000000;
 }
 
 /*LOGO*/
